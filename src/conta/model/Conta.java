@@ -6,13 +6,13 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 public class Conta {
-    private int numero;
-    private int agencia;
-    private int tipo;
+    private Integer numero;
+    private Integer agencia;
+    private Integer tipo;
     private String titular;
-    private float saldo;
+    private Float saldo;
 
     public boolean sacar(float valor) {
         if (this.getSaldo() < valor) {
