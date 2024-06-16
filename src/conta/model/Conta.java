@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Conta {
+public abstract class Conta {
     private int numero;
     private int agencia;
     private int tipo;

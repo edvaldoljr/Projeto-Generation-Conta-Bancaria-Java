@@ -1,16 +1,18 @@
 package conta.model;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class ContaCorrenteLimite extends  Conta {
 
     private float limite;
 
+    public ContaCorrenteLimite(int numero, int agencia, int tipo, String titular, Float saldo, float limite) {
+        super(numero, agencia, tipo, titular, saldo);
+        this.limite = limite;
+    }
 
     @Override
     public boolean sacar(float valor) {
