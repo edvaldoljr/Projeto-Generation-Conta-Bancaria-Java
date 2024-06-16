@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-//@NoArgsConstructor
+@NoArgsConstructor
 public class Conta {
-    private Integer numero;
-    private Integer agencia;
-    private Integer tipo;
+    private int numero;
+    private int agencia;
+    private int tipo;
     private String titular;
     private Float saldo;
 
