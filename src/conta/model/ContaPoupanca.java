@@ -1,25 +1,15 @@
 package conta.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ContaPoupanca extends Conta{
 
     private int aniversarioConta;
-
-    public ContaPoupanca(int numero, int agencia, int tipo, String titular, Float saldo, int aniversarioConta) {
-        super(numero, agencia, tipo, titular, saldo);
-        this.aniversarioConta = aniversarioConta;
-    }
-
-    public ContaPoupanca(){
-
-    }
-
-    public int getAniversarioConta() {
-        return aniversarioConta;
-    }
-
-    public void setAniversarioConta(int aniversatio) {
-        this.aniversarioConta = aniversatio;
-    }
 
     @Override
     public void visualizar() {
