@@ -94,41 +94,42 @@ public class Menu {
             }
 
             switch (opcao) {
-                case 1:
+                case 1 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Criar Conta\n\n");
                     keyPress();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Listar todas as Contas\n\n");
                     keyPress();
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Consultar dados da Conta - por número\n\n");
                     keyPress();
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Atualizar dados da Conta\n\n");
                     keyPress();
-                    break;
-                case 5:
+                }
+
+                case 5 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Apagar a Conta\n\n");
                     keyPress();
-                    break;
-                case 6:
+                }
+
+                case 6 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Saque\n\n");
                     keyPress();
-                    break;
-                case 7:
+                }
+
+                case 7 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Depósito\n\n");
                     keyPress();
-                    break;
-                case 8:
+                }
+                case 8 -> {
                     System.out.println(Cores.TEXT_BLUE_BOLD + "Transferência entre Contas\n\n");
                     keyPress();
-                    break;
-                default:
-                    System.out.println(Cores.TEXT_BLUE_BOLD + "\nOpção Inválida!\n" + Cores.TEXT_RESET);
-                    break;
+                }
+                default ->  System.out.println(Cores.TEXT_BLUE_BOLD + "\nOpção Inválida!\n" + Cores.TEXT_RESET);
             }
         }
     }
