@@ -1,16 +1,19 @@
 package conta.model;
 
-
-import lombok.Data;
-
-@Data
-
 public class ContaCorrenteLimite extends  Conta {
 
     private float limite;
 
     public ContaCorrenteLimite(int numero, int agencia, int tipo, String titular, Float saldo, float limite) {
         super(numero, agencia, tipo, titular, saldo);
+        this.limite = limite;
+    }
+
+    public float getLimite() {
+        return limite;
+    }
+
+    public void setLimite(float limite) {
         this.limite = limite;
     }
 
